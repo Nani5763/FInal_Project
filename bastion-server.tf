@@ -10,7 +10,7 @@ resource "aws_instance" "back" {
     }
     user_data = templatefile("./install-tools.sh", {})
     tags = {
-      Name = "bastion-server"
+    Name = var.instance_name
     }
   
 }

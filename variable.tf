@@ -16,6 +16,11 @@ variable "key_name" {
     default = "test-key-pair"
   
 }
+variable "instance_name" {
+  description = "EC2 Instance name for the jumphost server"
+  type        = string
+  default     = "Bastion-host-server"
+}
 variable "iam-role" {
   description = "IAM Role for the Jumphost Server"
   type = string
