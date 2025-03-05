@@ -12,6 +12,5 @@ resource "aws_instance" "back" {
     tags = {
       Name = "bastion-server"
     }
-
   
 }
